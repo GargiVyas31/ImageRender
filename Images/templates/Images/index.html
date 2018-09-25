@@ -1,0 +1,19 @@
+
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Image</title>
+</head>
+<body>
+<img src="{% static 'pic.jpg' %}">
+
+<a href="{%url 'Images:data'  %}">Click Here</a>
+{% for i in data %}
+<p>{{ i}}</p>
+{% endfor %}
+
+</body>
+</html>
